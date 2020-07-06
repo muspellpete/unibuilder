@@ -1,0 +1,13 @@
+<section class="phx-hero">
+  <h1><%= "Building of " <> @name <> " is done!"%></h1>
+</section>
+
+<form>
+    <input type="hidden" id="built" name="built" value=built>
+    <input type="hidden" id="build_path" name="build_path" value=<%= @build_path %>>
+    <input type="submit" value="Get zip">
+</form>
+
+<form>
+    <input type="submit" value="To start">
+</form>

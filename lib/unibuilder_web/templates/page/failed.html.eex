@@ -3,7 +3,5 @@
 </section>
 
 <form>
-    <input type="hidden" id="url" name="url" value="<%= @url %>">
-    <input type="hidden" id="reason" name="reason" value="<%= @reason %>">
     <input type="submit" value="To start">
 </form>

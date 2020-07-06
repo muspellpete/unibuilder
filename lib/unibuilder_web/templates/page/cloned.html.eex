@@ -1,5 +1,9 @@
 <section class="phx-hero">
-  <h1><%= "Cloned from:" <> @url %></h1>
+  <h1><%= "Cloned from:" <> @url <> ", click to start building!"%></h1>
 </section>
 
-<input type="submit" value="Start building">
+<form>
+    <input type="hidden" id="cloned" name="cloned" value=cloned>
+    <input type="hidden" id="path" name="path" value="<%= @path %>">
+    <input type="submit" value="Build">
+</form>

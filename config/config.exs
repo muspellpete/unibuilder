@@ -16,7 +16,8 @@ config :unibuilder, UnibuilderWeb.Endpoint,
   secret_key_base: "X0i1UwqTl+yXwgtPnP0JSz2fv/YtGupM746wPwoT8MYXNHReZoKKqleAqu6OU4As",
   render_errors: [view: UnibuilderWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Unibuilder.PubSub,
-  live_view: [signing_salt: "883//p1g"]
+  live_view: [signing_salt: "883//p1g"],
+  http: [port: 4000, protocol_options: [idle_timeout: 5_000_000]]
 
 # Configures Elixir's Logger
 config :logger, :console,
