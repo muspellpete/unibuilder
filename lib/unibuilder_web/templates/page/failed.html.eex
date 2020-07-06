@@ -1,0 +1,9 @@
+<section class="phx-hero">
+  <h1><%= "Failed to clone from:\n" <> @url <> " because " <> @reason %></h1>
+</section>
+
+<form>
+    <input type="hidden" id="url" name="url" value="<%= @url %>">
+    <input type="hidden" id="reason" name="reason" value="<%= @reason %>">
+    <input type="submit" value="To start">
+</form>

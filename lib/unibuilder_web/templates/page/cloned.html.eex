@@ -1,0 +1,5 @@
+<section class="phx-hero">
+  <h1><%= "Cloned from:" <> @url %></h1>
+</section>
+
+<input type="submit" value="Start building">
